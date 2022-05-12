@@ -1,36 +1,25 @@
-# ds-project-template
+# EDA project 
 
-Template for creating ds simple projects
+The task was to analyze data about Houses which can be bought in King County US for one specific stakeholder
 
 ## Requirements
 
 - pyenv
 - python==3.9.8
+- matplotlib==3.3.4 
+- pandas==1.2.2 
+- plotly==4.14.3 
+- seaborn==0.11.1
 
-## Setup
 
-One of the first steps when starting any data science project is to create a virtual environment. For this project you have to create this environment from scratch yourself. However, you should be already familiar with the commands you will need to do so. The general workflow consists of... 
+## Given  data to work with
+ - A list stakeholders names are in assignment.md. 
+ - Data about the houses are in data/King_County_House_prices_dataset.csv
+ - The names of the columns of the date is in column_names.md
 
-* setting the python version locally to 3.9.8
-* creating a virtual environment using the `venv` module
-* activating your newly created environment 
-* upgrading `pip` (This step is not absolutely necessary, but will save you trouble when installing some packages.)
-* installing the required packages via `pip`
-
-At the end, you want to make sure that people who are interested in your project can create an identical environment on their own computer in order to be able to run your code without running into errors. Therefore you can create a `requirements file` and add it to your repository. You can create such a file by running the following command: 
-
-```bash
-pip freeze > requirements.txt
-```
-
-*Note: In rare case such a requirements file created with `pip freeze` might not ensure that another (especially M1 chip) user can install and execute it properly. This can happen if libraries need to be compiled (e.g. SciPy). Then it also depends on environment variables and the actual system libraries.*
-
+## Results 
+The results of the data analysis can be found in EDA.ipynb and in the slices EDA.pdf.
 ### Unit testing (Optional)
 
-If you write python scripts for your data processing methods, you can also write unit tests. In order to run the tests execute in terminal:
+Don't thought about unit testing. 
 
-```bash
-pytest
-```
-
-This command will execute all the functions in your project that start with the word **test**.
